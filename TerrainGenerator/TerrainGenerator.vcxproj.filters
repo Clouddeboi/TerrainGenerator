@@ -15,14 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TerrainGenerator.cpp">
+    <ClCompile Include="ProjectFiles\source\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ProjectFiles\source\glad.c">
+    <ClCompile Include="ProjectFiles\source\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectFiles\source\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ProjectFiles\headers\Application.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

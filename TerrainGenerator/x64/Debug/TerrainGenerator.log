@@ -1,2 +1,4 @@
-﻿  TerrainGenerator.cpp
+﻿  Application.cpp
+  Main.cpp
+  Generating Code...
   TerrainGenerator.vcxproj -> C:\Users\micha\Desktop\PortfolioProjects\TerrainGenerator\TerrainGenerator\x64\Debug\TerrainGenerator.exe

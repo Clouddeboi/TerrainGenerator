@@ -141,11 +141,15 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ProjectFiles\source\Application.cpp" />
     <ClCompile Include="ProjectFiles\source\glad.c" />
-    <ClCompile Include="TerrainGenerator.cpp" />
+    <ClCompile Include="ProjectFiles\source\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ProjectFiles\headers\Application.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -48,6 +48,9 @@
     <ClCompile Include="ProjectFiles\source\Mesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ProjectFiles\source\FrameBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -55,6 +58,12 @@
       <Filter>Assets\Shaders\Frag</Filter>
     </None>
     <None Include="ProjectFiles\assets\shaders\vert\Test.vert">
+      <Filter>Assets\Shaders\Vert</Filter>
+    </None>
+    <None Include="ProjectFiles\assets\shaders\frag\Composite.frag">
+      <Filter>Assets\Shaders\Frag</Filter>
+    </None>
+    <None Include="ProjectFiles\assets\shaders\vert\Composite.vert">
       <Filter>Assets\Shaders\Vert</Filter>
     </None>
   </ItemGroup>
@@ -72,6 +81,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ProjectFiles\headers\Mesh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectFiles\headers\FrameBuffer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

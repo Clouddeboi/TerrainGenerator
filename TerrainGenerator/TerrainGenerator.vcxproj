@@ -143,6 +143,7 @@
   <ItemGroup>
     <ClCompile Include="ProjectFiles\source\Application.cpp" />
     <ClCompile Include="ProjectFiles\source\Camera.cpp" />
+    <ClCompile Include="ProjectFiles\source\FrameBuffer.cpp" />
     <ClCompile Include="ProjectFiles\source\glad.c" />
     <ClCompile Include="ProjectFiles\source\Main.cpp" />
     <ClCompile Include="ProjectFiles\source\Mesh.cpp" />
@@ -151,12 +152,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="ProjectFiles\assets\shaders\frag\Composite.frag" />
     <None Include="ProjectFiles\assets\shaders\frag\Test.frag" />
+    <None Include="ProjectFiles\assets\shaders\vert\Composite.vert" />
     <None Include="ProjectFiles\assets\shaders\vert\Test.vert" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ProjectFiles\headers\Application.hpp" />
     <ClInclude Include="ProjectFiles\headers\Camera.hpp" />
+    <ClInclude Include="ProjectFiles\headers\FrameBuffer.hpp" />
     <ClInclude Include="ProjectFiles\headers\Mesh.hpp" />
     <ClInclude Include="ProjectFiles\headers\Shader.hpp" />
     <ClInclude Include="ProjectFiles\headers\World.hpp" />

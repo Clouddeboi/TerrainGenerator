@@ -2,6 +2,7 @@
 
 #include <GLFW/glfw3.h>
 #include "../headers/Shader.hpp"
+#include "../headers/World.hpp"
 
 class Application
 {
@@ -27,7 +28,5 @@ private:
 
     bool m_Running = true;
 
-    Shader* m_Shader = nullptr;
-    unsigned int VAO = 0;
-    unsigned int VBO = 0;
+    World m_World;
 };

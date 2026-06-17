@@ -2,6 +2,8 @@
 
 #include "../headers/Camera.hpp"
 #include "../headers/Shader.hpp"
+#include "../headers/Mesh.hpp"
+#include <memory>
 
 struct GLFWwindow;
 
@@ -24,4 +26,8 @@ private:
     GLFWwindow* m_Window;
 
     Camera m_Camera;
+
+	Mesh m_Mesh;
+
+    std::unique_ptr<Shader> m_Shader;
 };

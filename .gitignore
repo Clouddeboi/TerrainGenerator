@@ -1,0 +1,60 @@
+# ==========================================
+# 1. Visual Studio & IDE Artifacts (Crucial!)
+# ==========================================
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+out/
+build/
+*.vsidx
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ==========================================
+# 2. Dependencies & Package Managers
+# ==========================================
+# Visual Studio NuGet packages folder
+packages/
+# vcpkg build artifacts (if you use it for OpenGL libraries)
+vcpkg_installed/
+
+# ==========================================
+# 3. Your Existing C++ Compiler Rules (Kept & Cleaned)
+# ==========================================
+*.d
+*.slo
+*.lo
+*.o
+*.obj
+*.gch
+*.pch
+*.so
+*.dylib
+*.dll
+*.mod
+*.smod
+*.lai
+*.la
+*.a
+*.lib
+*.exe
+*.out
+*.app
+
+# ==========================================
+# 4. MSVC Build & Debug Logs
+# ==========================================
+*.pdb
+*.ilk
+*.aps
+*.ncb
+*.sdf
+*.tlog
+*.log
+*.ipch
+*.db
+*.opendb

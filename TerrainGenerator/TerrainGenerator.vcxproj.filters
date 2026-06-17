@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{dcdd934b-17a9-4de7-b597-b3e568627c4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Shaders">
+      <UniqueIdentifier>{891af6a9-944e-4a5d-a266-e29e1ffe2adf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Shaders\Vert">
+      <UniqueIdentifier>{c95477bd-0d1b-45b1-a042-399dec0d8944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Shaders\Frag">
+      <UniqueIdentifier>{1ed8ab27-b676-4421-ba17-cbcc23a3c43d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ProjectFiles\source\glad.c">
@@ -24,12 +36,24 @@
     <ClCompile Include="ProjectFiles\source\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ProjectFiles\source\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="ProjectFiles\assets\shaders\frag\Test.frag">
+      <Filter>Assets\Shaders\Frag</Filter>
+    </None>
+    <None Include="ProjectFiles\assets\shaders\vert\Test.vert">
+      <Filter>Assets\Shaders\Vert</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ProjectFiles\headers\Application.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectFiles\headers\Shader.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

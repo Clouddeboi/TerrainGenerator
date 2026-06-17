@@ -144,12 +144,16 @@
     <ClCompile Include="ProjectFiles\source\Application.cpp" />
     <ClCompile Include="ProjectFiles\source\glad.c" />
     <ClCompile Include="ProjectFiles\source\Main.cpp" />
+    <ClCompile Include="ProjectFiles\source\Shader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="ProjectFiles\assets\shaders\frag\Test.frag" />
+    <None Include="ProjectFiles\assets\shaders\vert\Test.vert" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ProjectFiles\headers\Application.hpp" />
+    <ClInclude Include="ProjectFiles\headers\Shader.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

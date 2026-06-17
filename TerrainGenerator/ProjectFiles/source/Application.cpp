@@ -59,12 +59,38 @@ void Application::Init()
     std::cout << "OpenGL: "
         << glGetString(GL_VERSION)
         << std::endl;
+
+    m_Shader = new Shader(
+        "ProjectFiles/Assets/Shaders/Vert/Test.vert",
+        "ProjectFiles/Assets/Shaders/Frag/Test.frag"
+    );
+
+    float vertices[] = {
+     0.0f,  0.5f, 0.0f,
+    -0.5f, -0.5f, 0.0f,
+     0.5f, -0.5f, 0.0f
+    };
+
+    glGenVertexArrays(1, &VAO);
+    glGenBuffers(1, &VBO);
+
+    glBindVertexArray(VAO);
+
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
 }
 
 void Application::Shutdown()
 {
     glfwDestroyWindow(m_Window);
     glfwTerminate();
+    delete m_Shader;
+
+    glDeleteVertexArrays(1, &VAO);
+    glDeleteBuffers(1, &VBO);
 }
 
 void Application::Update(double fixedDeltaTime)
@@ -90,6 +116,11 @@ void Application::Render()
         1.0f);
 
     glClear(GL_COLOR_BUFFER_BIT);
+
+    m_Shader->Bind();
+
+    glBindVertexArray(VAO);
+    glDrawArrays(GL_TRIANGLES, 0, 3);
 
     glfwSwapBuffers(m_Window);
 }

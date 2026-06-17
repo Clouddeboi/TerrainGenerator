@@ -1,6 +1,7 @@
 #pragma once
 
 #include <GLFW/glfw3.h>
+#include "../headers/Shader.hpp"
 
 class Application
 {
@@ -25,4 +26,8 @@ private:
     const char* m_Title;
 
     bool m_Running = true;
+
+    Shader* m_Shader = nullptr;
+    unsigned int VAO = 0;
+    unsigned int VBO = 0;
 };

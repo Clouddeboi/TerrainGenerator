@@ -4,7 +4,7 @@
 #include <iostream>
 
 //Pixel scale: 4 = retro feel, 2 = sharper, 8 = chunkier
-constexpr int PIXEL_SCALE = 4;
+constexpr int PIXEL_SCALE = 2;
 
 Framebuffer::Framebuffer()
 {

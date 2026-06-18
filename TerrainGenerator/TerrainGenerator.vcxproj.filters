@@ -86,5 +86,8 @@
     <ClInclude Include="ProjectFiles\headers\FrameBuffer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ProjectFiles\headers\Block.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

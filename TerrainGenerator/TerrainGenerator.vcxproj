@@ -159,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ProjectFiles\headers\Application.hpp" />
+    <ClInclude Include="ProjectFiles\headers\Block.hpp" />
     <ClInclude Include="ProjectFiles\headers\Camera.hpp" />
     <ClInclude Include="ProjectFiles\headers\FrameBuffer.hpp" />
     <ClInclude Include="ProjectFiles\headers\Mesh.hpp" />
